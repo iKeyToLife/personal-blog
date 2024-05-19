@@ -66,6 +66,16 @@ body {
 .header button {
     position: relative;
     right: 10px;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.header img {
+    mix-blend-mode: difference;
+    width: 30px;
+    height: auto;
 }
 
 .footer {
