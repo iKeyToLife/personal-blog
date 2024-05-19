@@ -13,11 +13,15 @@ function changeTheme() {
         document.documentElement.style.setProperty('--dark', '#f8f9fa');
         document.documentElement.style.setProperty('--gray', '#fff');
         document.documentElement.style.setProperty('--gray-dark', 'antiquewhite');
+        document.documentElement.style.setProperty('--antiquewhite', '#343a40');
+
     } else {
         document.documentElement.style.setProperty('--light', '#f8f9fa');
         document.documentElement.style.setProperty('--dark', '#17171b');
         document.documentElement.style.setProperty('--gray', '#6c757d');
         document.documentElement.style.setProperty('--gray-dark', '#343a40');
+        document.documentElement.style.setProperty('--antiquewhite', 'antiquewhite');
+
     }
 }
 
