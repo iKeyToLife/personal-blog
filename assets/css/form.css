@@ -12,8 +12,15 @@
 }
 
 .box img {
-    width: 100%;
+    width: 60%;
     height: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .container {
@@ -31,4 +38,60 @@
 
 #flex-right {
     border-left: 3px solid var(--dark);
+}
+
+.form {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.form input,
+.form textarea {
+    width: 80%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--light);
+    background-color: var(--gray);
+    color: var(--light);
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+    color: var(--light);
+}
+
+.form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.form h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.form button {
+    height: 40px;
+    width: 120px;
+    background-color: var(--gray-dark);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-info span {
+    font-size: 20px;
+}
+
+.form button:hover {
+    background-color: var(--yellow);
 }
