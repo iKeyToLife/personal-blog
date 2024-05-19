@@ -37,6 +37,7 @@ body {
     margin: 0;
     color: var(--dark);
     background-color: var(--light);
+    transition: background-color 0.6s, color 1.6s ease;
 }
 
 .header {
@@ -58,7 +59,7 @@ body {
     left: 0px;
     background-color: var(--yellow);
     height: 100%;
-    width: 10%;
+    width: 150px;
     align-items: center;
     justify-content: center;
 }

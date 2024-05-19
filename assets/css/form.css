@@ -74,6 +74,8 @@
 
 .form h2 {
     font-size: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
     margin-bottom: 30px;
 }
 
@@ -81,7 +83,7 @@
     height: 40px;
     width: 120px;
     background-color: var(--gray-dark);
-    color: var(--white);
+    color: var(--light);
     border: none;
     border-radius: 5px;
     cursor: pointer;
