@@ -1,5 +1,6 @@
 const themeBtn = document.querySelector(`#background-theme`);
 
+// check infot and init current page
 function init() {
     if (localStorage.getItem(`theme`) === null) {
         localStorage.setItem(`theme`, true)
@@ -7,6 +8,7 @@ function init() {
     changeTheme()
 }
 
+// change dark light theme
 function changeTheme() {
     if (localStorage.getItem(`theme`) === `true`) {
         document.documentElement.style.setProperty('--light', '#17171b');
@@ -25,6 +27,7 @@ function changeTheme() {
     }
 }
 
+// listner for change theme dark light
 themeBtn.addEventListener(`click`, function () {
     if (localStorage.getItem(`theme`) === null || localStorage.getItem(`theme`) === `false`) {
         localStorage.setItem(`theme`, true);
