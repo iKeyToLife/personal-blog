@@ -16,6 +16,7 @@
     --gray-dark: #343a40;
     --secondary: #6c757d;
     --success: #28a745;
+    --error: #dc3545;
     --info: #17a2b8;
     --light: #f8f9fa;
     --dark: #17171b;
@@ -92,4 +93,13 @@ body {
     border-top: 3px solid var(--dark);
     margin-top: 2px;
     font-size: 20px;
+}
+
+.form p {
+    font-size: 20px;
+    color: var(--error);
+}
+
+.form .error-border {
+    border: 3px solid red;
 }
