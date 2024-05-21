@@ -6,29 +6,32 @@ const errorP = document.querySelectorAll(`#error`);
 
 // Redirects to blog.html
 function goToBlog() {
-    if (!checkContent()) {
+    const user = userEl.value.trim();
+    const title = titleEl.value.trim();
+    const content = contentEl.value.trim();
+
+    if (!checkIsValid(user, title, content)) {
         return;
     }
-
-    localStorage.setItem('currentUser', currentUser())
+    addNewMessage(user, title, content);
+    currentUser();
     window.location.href = `./pages/blog.html`
 }
 
 
 // check valid input userName, title, content
-function checkContent() {
-    userEl.classList.remove('error-border');
-    titleEl.classList.remove('error-border');
-    contentEl.classList.remove('error-border');
+function checkIsValid(user, title, content) {
 
-    let user = userEl.value.trim();
-    let title = titleEl.value.trim();
-    let content = contentEl.value.trim();
+    //clear errors
+    [userEl, titleEl, contentEl].forEach(el => el.classList.remove('error-border'));
+    errorP.forEach(error => error.textContent = ``);
+
+
+
 
     let isValid = true;
 
 
-    errorP.forEach(error => error.textContent = ``);
 
     if (user === `` || title === `` || content === ``) {
         if (userEl.value.trim() === ``) {
@@ -65,13 +68,45 @@ function checkContent() {
     return isValid;
 }
 
+
+// create new message into localStorage
+function addNewMessage(user, title, content) {
+
+    const messages = JSON.parse(localStorage.getItem('messages')) || [];
+
+    let lastMessageId = 0;
+    //check if we have something in localStorage
+    if (messages.length > 0) {
+        lastMessageId = messages[messages.length - 1].id;
+    }
+
+    const newMessageId = ++lastMessageId;
+
+    let newMessage = {
+        id: newMessageId,
+        user: user,
+        title: title,
+        content: content
+    };
+
+    messages.push(newMessage);
+
+    localStorage.setItem('message', JSON.stringify(messages));
+}
+
 // create currentUser
 function currentUser() {
-    return JSON.stringify({
+    const currentUser = {
         userName: userEl.value,
         titleEl: titleEl.value,
         contentEl: contentEl.value
-    })
+    }
+    localStorage.setItem(`currentUser`, JSON.stringify(currentUser));
+}
+
+// clear localStorage message
+function clearAllMessages() {
+    localStorage.setItem('message', ``);
 }
 
 // listner submit send message
