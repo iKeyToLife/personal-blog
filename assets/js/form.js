@@ -91,7 +91,7 @@ function addNewMessage(user, title, content) {
 
     messages.push(newMessage);
 
-    localStorage.setItem('message', JSON.stringify(messages));
+    localStorage.setItem('messages', JSON.stringify(messages));
 }
 
 // create currentUser
@@ -106,7 +106,7 @@ function currentUser() {
 
 // clear localStorage message
 function clearAllMessages() {
-    localStorage.setItem('message', ``);
+    localStorage.setItem('messages', ``);
 }
 
 // listner submit send message
