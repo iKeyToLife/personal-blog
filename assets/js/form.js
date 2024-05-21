@@ -47,7 +47,7 @@ function checkContent() {
     }
 
     if (user.length > 50) {
-        errorP[0].textContent = `The Username cannot be more than 30 characters.`;
+        errorP[0].textContent = `The Username cannot be more than 50 characters.`;
         userEl.classList.add(`error-border`);
         isValid = false;
 
