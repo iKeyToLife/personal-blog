@@ -6,7 +6,6 @@
 }
 
 .footer {
-    height: 67px;
     background-color: var(--light);
     position: relative;
     margin-top: 2px;
@@ -48,23 +47,6 @@
     padding: 5px;
 }
 
-#link-home {
-    text-decoration: none;
-    background-color: var(--antiquewhite);
-    color: var(--dark);
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    display: inline-block;
-    border: 3px solid var(--gray-dark);
-    margin-right: 20px;
-    transition: background-color 0.3s ease;
-}
-
-#link-home:hover {
-    background-color: var(--yellow);
-}
 
 .authorized {
     font-family: var(--font-family-sans-serif);

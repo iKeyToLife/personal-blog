@@ -86,7 +86,7 @@ body {
     position: relative;
     bottom: 0px;
     width: 100%;
-    height: 10%;
+    height: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -104,4 +104,45 @@ body {
 
 .form .error-border {
     border: 3px solid red;
+}
+
+#link-home {
+    text-decoration: none;
+    background-color: var(--antiquewhite);
+    color: var(--dark);
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    border: 3px solid var(--gray-dark);
+    margin-right: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#link-home:hover {
+    background-color: var(--yellow);
+}
+
+.created-by {
+    position: absolute;
+    height: 90%;
+    width: auto;
+    left: 0px;
+    margin-left: 10px;
+    top: 5px;
+}
+
+.created-by li {
+    font-size: 15px;
+}
+
+.created-by a,
+li {
+    text-decoration: none;
+    color: inherit;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 3px;
 }
