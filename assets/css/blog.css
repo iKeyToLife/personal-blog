@@ -34,27 +34,18 @@
     border: 5px solid var(--gray-dark);
     background-color: var(--antiquewhite);
     color: var(--dark);
-    border-radius: 4rem;
+    border-radius: 20px;
     box-sizing: border-box;
 }
 
-#content {
-    margin: auto;
-}
-
-#user,
-#title {
-    padding: 5px;
-    position: relative;
-    left: 10px;
-}
 
 #content,
 #title,
 #user {
     word-break: break-word;
     margin: auto;
-    width: 95%;
+    width: 97%;
+    padding: 5px;
 }
 
 #link-home {

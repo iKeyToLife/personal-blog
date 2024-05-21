@@ -21,9 +21,16 @@ function checkContent() {
     titleEl.classList.remove('error-border');
     contentEl.classList.remove('error-border');
 
+    let user = userEl.value.trim();
+    let title = titleEl.value.trim();
+    let content = contentEl.value.trim();
+
+    let isValid = true;
+
+
     errorP.forEach(error => error.textContent = ``);
 
-    if (userEl.value.trim() === `` || titleEl.value.trim() === `` || contentEl.value.trim() === ``) {
+    if (user === `` || title === `` || content === ``) {
         if (userEl.value.trim() === ``) {
             errorP[0].textContent = `The Username field cannot be empty, please fill it in.`
             userEl.classList.add(`error-border`);
@@ -36,9 +43,26 @@ function checkContent() {
             errorP[2].textContent = `The Content field cannot be empty, please fill it in.`
             contentEl.classList.add('error-border');
         }
-        return false;
+        isValid = false;
     }
-    return true;
+
+    if (user.length > 50) {
+        errorP[0].textContent = `The Username cannot be more than 30 characters.`;
+        userEl.classList.add(`error-border`);
+        isValid = false;
+
+    } if (title.length > 80) {
+        errorP[1].textContent = `The Title cannot be more than 80 characters.`;
+        userEl.classList.add(`error-border`);
+        isValid = false;
+
+    } if (content.length > 600) {
+        errorP[2].textContent = `The content cannot be more than 600 characters.`;
+        userEl.classList.add(`error-border`);
+        isValid = false;
+
+    }
+    return isValid;
 }
 
 // create currentUser
