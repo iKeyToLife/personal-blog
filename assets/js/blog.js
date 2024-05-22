@@ -51,13 +51,6 @@ function init() {
     }
 }
 
-// testFunction
-// function getMessages() {
-//     const messagesArr = JSON.parse(localStorage.getItem(`messages`))
-//     for (let i = messagesArr.length - 1; i >= 0; i--) {
-//         createMessage(messagesArr[i]);
-//     }
-// }
 
 function getMessage(objMessage) {
     const ulElement = document.createElement(`ul`);
