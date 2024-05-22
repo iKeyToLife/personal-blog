@@ -57,9 +57,9 @@ The following animation demonstrates the application functionality:
 ## Repository Link
 [My blog Repository](https://github.com/iKeyToLife/personal-blog/)
 
-<!-- ## Deployed Application
-[My blog Deployed Application](https://ikeytolife.github.io/personal-blog/) -->
+## Deployed Application
+[My blog Deployed Application](https://ikeytolife.github.io/personal-blog/)
 
-<!-- ## Example Application
-![Application Screenshot](./assets/images/)
-![Application Screenshot](./assets/images/) -->
+<!-- <!-- ## Example Application -->
+![Application Screenshot](./assets/images/preview-project.gif)
+![Application Screenshot](./assets/images/preview-project.png) -->
