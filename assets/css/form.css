@@ -1,3 +1,4 @@
+/* content box form */
 .box {
     position: relative;
     display: flex;
@@ -23,6 +24,7 @@
     width: 100%;
 }
 
+/* container logo */
 .container {
     position: relative;
     display: flex;
@@ -40,6 +42,7 @@
     border-left: 3px solid var(--dark);
 }
 
+/* form style */
 .form {
     display: flex;
     width: 100%;
@@ -90,14 +93,11 @@
     transition: background-color 0.3s ease;
 }
 
-.contact-info span {
-    font-size: 20px;
-}
-
 .form button:hover {
     background-color: var(--yellow);
 }
 
+/* meadie for other devices */
 @media screen and (max-width: 768px) {
     .footer h3 {
         opacity: 0;

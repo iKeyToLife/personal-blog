@@ -28,6 +28,7 @@
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+/* standart body */
 body {
     font-family: var(--font-family-sans-serif);
     max-width: 100%;
@@ -43,6 +44,7 @@ body {
     transition: background-color 0.6s, color 1.6s ease;
 }
 
+/* header */
 .header {
     position: relative;
     top: 0px;
@@ -82,6 +84,7 @@ body {
     height: auto;
 }
 
+/* footer */
 .footer {
     position: relative;
     bottom: 0px;
@@ -106,6 +109,7 @@ body {
     border: 3px solid red;
 }
 
+/* link style */
 #link-home {
     text-decoration: none;
     background-color: var(--antiquewhite);
@@ -147,6 +151,7 @@ li {
     padding: 3px;
 }
 
+/* media for other device */
 @media screen and (max-width: 768px) {
     .footer h3 {
         opacity: 0;

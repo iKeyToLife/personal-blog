@@ -8,7 +8,7 @@ function init() {
     changeTheme()
 }
 
-// change dark light theme
+// change dark light theme in root
 function changeTheme() {
     if (localStorage.getItem(`theme`) === `true`) {
         document.documentElement.style.setProperty('--light', '#17171b');

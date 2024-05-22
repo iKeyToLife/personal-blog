@@ -4,7 +4,7 @@ const userEl = document.querySelector(`#user`);
 const backLinkEl = document.querySelector(`#link-home`);
 const mainEl = document.querySelector(`#isAuthorized`);
 
-
+// clearCurrentUser when we redirect back, then we authorized
 function clearCurrentUser() {
 
     localStorage.setItem(`currentUser`, ``);
@@ -16,11 +16,12 @@ backLinkEl.addEventListener(`click`, function (event) {
     window.location.href = backLinkEl.href;
 });
 
+// init page
 function init() {
 
     const currentUser = localStorage.getItem(`currentUser`);
 
-
+    // check authorized user and redirect back if unAuthorized
     if (!currentUser) {
         mainEl.classList.remove(`authorized`);
         mainEl.classList.add(`unAuthorized`);
@@ -37,6 +38,7 @@ function init() {
             }
         }, 1000);
         return;
+        // create blog messages if authorized
     } else {
         mainEl.classList.remove(`unAuthorized`);
         mainEl.classList.add(`authorized`);
@@ -51,7 +53,7 @@ function init() {
     }
 }
 
-
+// create ul and li elements for blog messages
 function getMessage(objMessage) {
     const ulElement = document.createElement(`ul`);
     ulElement.classList.add(`content-blog`);

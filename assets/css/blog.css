@@ -1,3 +1,4 @@
+/* header style */
 .header {
     height: 10%;
     position: relative;
@@ -5,12 +6,14 @@
     background-color: var(--light);
 }
 
+/* footer style */
 .footer {
     background-color: var(--light);
     position: relative;
     margin-top: 2px;
 }
 
+/* style blog content */
 .content {
     position: relative;
     display: flex;
@@ -21,6 +24,7 @@
     overflow-y: scroll;
 }
 
+/* style blog box content */
 .content-blog {
     position: relative;
     top: 0px;
@@ -47,7 +51,7 @@
     padding: 5px;
 }
 
-
+/* if authorized style */
 .authorized {
     font-family: var(--font-family-sans-serif);
     max-width: 100%;
@@ -63,6 +67,7 @@
     transition: background-color 0.6s, color 1.6s ease;
 }
 
+/* if unAuthorized then hid everything and redirect */
 .unAuthorized {
     position: relative;
     width: 100%;

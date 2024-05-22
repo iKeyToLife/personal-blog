@@ -63,8 +63,8 @@ function checkIsValid(user, title, content) {
         errorP[2].textContent = `The content cannot be more than 600 characters.`;
         userEl.classList.add(`error-border`);
         isValid = false;
-
     }
+
     return isValid;
 }
 
