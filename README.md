@@ -60,6 +60,6 @@ The following animation demonstrates the application functionality:
 ## Deployed Application
 [My blog Deployed Application](https://ikeytolife.github.io/personal-blog/)
 
-<!-- <!-- ## Example Application -->
+## Example Application
 ![Application Screenshot](./assets/images/preview-project.gif)
 ![Application Screenshot](./assets/images/preview-project.png) -->
