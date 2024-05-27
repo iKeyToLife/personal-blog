@@ -62,4 +62,4 @@ The following animation demonstrates the application functionality:
 
 ## Example Application
 ![Application Screenshot](./assets/images/preview-project.gif)
-![Application Screenshot](./assets/images/preview-project.png) -->
+![Application Screenshot](./assets/images/preview-project.png)
